@@ -16,7 +16,7 @@ public class Main {
         System.out.println(service.getAllUsers());
         service.cleanUsersTable();
         service.dropUsersTable();
-        /*Util.closeConnection();*/
-        Util.closeSessionFactory();
+        Util.closeConnection();
+       /* Util.closeSessionFactory();*/
     }
 }

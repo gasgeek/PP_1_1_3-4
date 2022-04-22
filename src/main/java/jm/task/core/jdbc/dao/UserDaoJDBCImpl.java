@@ -1,4 +1,3 @@
-/*
 package jm.task.core.jdbc.dao;
 
 import com.mysql.cj.exceptions.CJOperationNotSupportedException;
@@ -92,4 +91,3 @@ public class UserDaoJDBCImpl extends Util implements UserDao {
         }
     }
 }
-*/

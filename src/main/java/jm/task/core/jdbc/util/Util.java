@@ -1,16 +1,17 @@
 package jm.task.core.jdbc.util;
 
-import jm.task.core.jdbc.model.User;
-import org.hibernate.Session;
+/*import jm.task.core.jdbc.model.User;
+import org.hibernate.Session;*/
 import org.hibernate.SessionFactory;
+/*
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.service.ServiceRegistry;
+*/
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-import java.util.Properties;
 
 public class Util {
     private static final String userName = "root";
@@ -20,7 +21,7 @@ public class Util {
     private static Connection connection;
     private static SessionFactory sessionFactory;
 
-   /* public static Connection getConnection() {
+    public static Connection getConnection() {
         try {
             Class.forName(driverName);
             connection = DriverManager.getConnection(connectionUrl, userName, password);
@@ -39,8 +40,8 @@ public class Util {
                 System.out.println("Failed due attempt to close connection");
             }
         }
-    }*/
-    public static SessionFactory createHibernateSessionFactory() {
+    }
+   /* public static SessionFactory createHibernateSessionFactory() {
         try {
             Properties properties = new Properties();
             properties.setProperty("hibernate.connection.url", connectionUrl);
@@ -65,5 +66,5 @@ public class Util {
             sessionFactory.close();
             System.out.println("SessionFactory has closed");
         }
-    }
+    }*/
 }

@@ -1,3 +1,4 @@
+/*
 package jm.task.core.jdbc.dao;
 import jm.task.core.jdbc.model.User;
 import jm.task.core.jdbc.util.Util;
@@ -76,7 +77,9 @@ public class UserDaoHibernateImpl implements UserDao {
             transaction = session.beginTransaction();
             User user = session.get(User.class, id);
             session.delete(user);
-            /*System.out.println("User with id " + user.getId() + " was removed");*/
+            */
+/*System.out.println("User with id " + user.getId() + " was removed");*//*
+
             transaction.commit();
         } catch (HibernateException e) {
             if (transaction != null) {
@@ -118,4 +121,4 @@ public class UserDaoHibernateImpl implements UserDao {
             e.printStackTrace();
         }
     }
-}
+}*/
